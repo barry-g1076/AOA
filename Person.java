@@ -1,3 +1,5 @@
+package RecommendDegreesOfFreedom;
+
 public class Person {
     String firstname;
     String lastname;
@@ -6,7 +8,7 @@ public class Person {
     String community;
     String school;
     String employer;
-    String privacy;
+    Boolean privacy;
     public Person() {
     }
     public String getFirstname() {
@@ -51,17 +53,18 @@ public class Person {
     public void setEmployer(String employer) {
         this.employer = employer;
     }
-    public String getPrivacy() {
+
+    public Boolean getPrivacy() {
         return privacy;
     }
-    public void setPrivacy(String privacy) {
+
+    public void setPrivacy(Boolean privacy) {
         this.privacy = privacy;
     }
+
+    @Override
     public String toString(){
-    return firstname + "\t" + lastname + "\t" + phone + "\t" + email + "\t"+ community + "\t" + school + "\t" + employer + "\t" + privacy;
+        return firstname + "\t" + lastname + "\t" + phone + "\t" + email + "\t"+ community + "\t" + school + "\t" + employer + "\t" + privacy;
     }
-
-
-
 
 }

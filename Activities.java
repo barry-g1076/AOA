@@ -1,15 +1,19 @@
+package RecommendDegreesOfFreedom;
+
+
 public class Activities {
     String firstname;
     String lastname;
+    String Activity;
 
     public Activities() {
     }
 
-    String Activity;
-
     public String getFirstname() {
+
         return firstname;
     }
+
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
@@ -21,7 +25,9 @@ public class Activities {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
-    public String toString(){
+
+    @Override
+    public String toString() {
         return firstname + "\t" + lastname + "\t" + Activity;
     }
 
@@ -31,5 +37,6 @@ public class Activities {
 
     public void setActivity(String activity) {
         Activity = activity;
+
     }
 }
